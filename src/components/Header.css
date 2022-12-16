@@ -1,0 +1,35 @@
+
+.header {
+  height: 105px;
+  background-color: #16abf8;
+}
+.header-title {
+  padding-top: 38px;
+  padding-bottom: 31px;
+  margin: auto;
+  width: 300px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: white;
+}
+@media (min-width: 640px) {
+    .header-title{
+        width: 600px;
+    }
+}
+@media (min-width: 768px) {
+    .header-title{
+        width: 700px;
+    }
+}
+@media (min-width: 1024px) {
+    .header-title{
+        width: 900px;
+    }
+}
+@media (min-width: 1280px) {
+    .header-title{
+        width: 1000px;
+    }
+}

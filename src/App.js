@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Activity from "./presentation/Activity/Activity";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Todos from "./presentation/Todo/Todos";
+import Header from "./components/Header";
+import "moment/locale/id";
+import moment from "moment";
+moment.locale("id");
 
 function App() {
+  // return <Activity />;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Activity />} />
+          <Route path="/detail/:id" element={<Todos />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

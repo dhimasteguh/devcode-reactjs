@@ -1,0 +1,65 @@
+.activity-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+.navigator-container{
+    padding-top: 43px;
+    padding-bottom: 43px;
+
+}
+.add-btn-todo:hover{
+    background-color: #0b8ac9;
+
+}
+.add-btn-todo{
+    cursor: pointer;
+    color: white;
+    background-color: #16abf8;
+    border: none;
+    border-radius: 45px;
+    padding: 13.5px 29px;
+    align-items: center;
+    display: flex;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Poppins";
+}
+@media (min-width: 640px) {
+    .header-title{
+        width: 600px;
+    }
+    .navigator-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 768px) {
+    .header-title{
+        width: 700px;
+    }
+    .navigator-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 1024px) {
+    .header-title{
+        width: 900px;
+    }
+    .navigator-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 1280px) {
+    .header-title{
+        width: 1000px;
+    }
+    .navigator-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
