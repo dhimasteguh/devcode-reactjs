@@ -1,11 +1,17 @@
 import React from "react";
 import { Plus } from "../constants/icons/Plus";
 import "./Navigator.css";
-const Navigator = () => {
+const Navigator = ({ test, title, onClick }) => {
   return (
     <div className="navigator-container">
-      <div className="activity-title">Activity</div>
-      <button className="add-btn-todo">
+      {title ? (
+        title
+      ) : (
+        <div className="activity-title" data-cy="activity-title">
+          Activity
+        </div>
+      )}
+      <button data-cy={test} onClick={onClick} className="add-btn-todo">
         <Plus />
         <span>Tambah</span>
       </button>

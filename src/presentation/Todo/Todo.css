@@ -1,0 +1,170 @@
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container {
+  width: 300px;
+  margin: auto;
+}
+.activity-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.edit-title:focus {
+  outline: none;
+}
+.edit-title {
+  background-color: transparent;
+  border: 0px;
+  font-size: 36px;
+  font-weight: 700;
+  max-width: 220px;
+  border-bottom: 1px solid;
+}
+.new-todo-label {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+}
+.new-todo-title,
+.new-todo-priority {
+  display: flex;
+  margin-top: 9px;
+}
+.new-todo-title > input {
+  width: 100%;
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  height: 52px;
+  margin-bottom: 26px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.todo-box {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 22px 26px 25px 27px;
+  box-shadow: 0px 6px 10px 0px #0000001a;
+}
+/* .todo-box:hover {
+  background-color: #ffffff9c;
+} */
+.check-input {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  border: 1px solid #c7c7c7;
+}
+input:checked {
+  background-color: #16abf8;
+  border-color: #16abf8;
+}
+.todo-box-title,
+.modal-del-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+.todo-box-priority {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  margin: 0 22px 0 16px;
+}
+.todo-box-date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #888888;
+}
+.not-found {
+  background-color: rgb(52, 56, 60);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.todo-done {
+  text-decoration: line-through;
+  color: #888;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  max-width: 364px;
+  padding: 24px;
+  background: white;
+  color: rgb(14, 30, 37);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.16);
+}
+.sort-icon {
+  margin-left: auto;
+  cursor: pointer;
+  margin-right: 18px;
+}
+.sort-box > .MuiPaper-rounded {
+  margin: 5px;
+  width: 235px;
+  padding: 0;
+  box-shadow: 8px 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.MuiMenu-list > li {
+  padding: 14px 21px 14px 21px;
+}
+.MuiMenu-list > hr {
+  margin: 0px !important;
+}
+@media (min-width: 640px) {
+  .container {
+    width: 600px;
+  }
+  .activites-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .edit-title {
+    max-width: 583px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+  .activites-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 900px;
+  }
+  .activites-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1000px;
+  }
+}

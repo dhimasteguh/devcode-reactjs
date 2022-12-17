@@ -1,7 +1,10 @@
-export const Trash = () => (
+export const Trash = ({ onClick, test }) => (
   <span
+    data-cy={test}
+    onClick={onClick}
     style={{
       // display: "inline-block",
+      cursor: "pointer",
       color: "#888888",
       height: 24,
       verticalAlign: "middle",

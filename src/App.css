@@ -1,24 +1,64 @@
-body{
-  font-family: "Poppins",sans-serif;
-  background-color: #F4F4F4;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
 }
-.flex-between{
+input {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 24px;
+}
+.invalid {
+  opacity: 0.2;
+  cursor: not-allowed !important;
+}
+.main-dialog > div > div {
+  border-radius: 12px;
+  max-width: 830px;
+  width: 100%;
+  margin: 10px;
+}
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 30px 19px 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+.modal-content {
+  border: 1px solid #e5e5e5;
+  border-left: none;
+  border-right: none;
+  padding: 24px 30px 19px 30px !important;
+}
+.flex {
+  align-items: center;
+  display: flex;
+}
+.flex-between {
   display: flex;
   justify-content: space-between;
 }
-.flex-center{
+.flex-center {
   display: flex;
   width: 100%;
   justify-content: center;
 }
-.loading-container{
+.loading-container {
   height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.animate-spin{
+#simple-select {
+  display: flex;
+  align-items: center;
+}
+.animate-spin {
   animation: spin 1s linear infinite;
   border: solid;
   border-color: #16abf8;
@@ -29,7 +69,55 @@ body{
   border-bottom: none;
   border-radius: 100%;
 }
-
+.btn-loading {
+  position: absolute;
+  animation: spin 1s linear infinite;
+  border: solid;
+  border-color: white;
+  width: 50%;
+  aspect-ratio: 1/1;
+  border-width: 3px;
+  margin: auto;
+  border-bottom: none;
+  border-radius: 100%;
+}
+.btn-loading > span {
+  visibility: hidden;
+}
+.modal-del-title {
+  text-align: center;
+}
+.btn-cancel {
+  cursor: pointer;
+  width: 150px;
+  height: 54px;
+  margin: 0 10px;
+  background-color: #f4f4f4;
+  color: #4a4a4a;
+  border-radius: 45px;
+  border: 0;
+  padding: 13.5px 29px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn-oke {
+  cursor: pointer;
+  width: 150px;
+  height: 54px;
+  margin: 0 10px;
+  background-color: #ed4c5c;
+  border-radius: 45px;
+  border: 0;
+  padding: 13.5px 29px;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+.delete-dialog > div > div {
+  border-radius: 12px;
+  width: 100%;
+  margin: 10px;
+}
 @keyframes spin {
   from {
     transform: rotate(0deg);
